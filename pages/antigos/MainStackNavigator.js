@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createStackNavigator, HeaderBackground } from '@react-navigation/stack';
 
 import Home from './home';
 import Programacao from './programacao';
@@ -13,8 +13,8 @@ const Stack = createStackNavigator()
 
 function MainStackNavigator() {
     return (
-        <NavigationContainer>
-            <Stack.Navigator>
+        <NavigationContainer >
+            <Stack.Navigator screenOptions={{headerStyle:{backgroundColor: '#515151'}, headerTintColor:'#F0f0f0'}}>
                 <Stack.Screen
                     name='Home'
                     component={Home}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 
-function Acervo() {
+function Acervo({navigation}) {
     return (
         <View style={styles.container}>
                 <View style={styles.estrutura}>
@@ -34,6 +34,7 @@ function Acervo() {
 const styles = StyleSheet.create({
     container: {
         alignItems: 'stretch',
+        
     },
     estrutura: {
         flexDirection: 'row',

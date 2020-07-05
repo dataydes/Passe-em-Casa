@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native'
 
 
-function Videos() {
+function Videos({navigation}) {
     return (
         <View style={styles.container}>
             <Text style={styles.text}>Vídeos</Text>
