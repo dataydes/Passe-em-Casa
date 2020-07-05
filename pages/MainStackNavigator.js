@@ -38,7 +38,7 @@ function MainStackNavigator() {
                 <Stack.Screen
                     name='Curadoria'
                     component={Curadoria}
-                    options={{ title: 'Curadorias' }} />
+                    options={{ title: 'Curadoria' }} />
             </Stack.Navigator>
 
         </NavigationContainer>

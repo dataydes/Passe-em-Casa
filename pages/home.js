@@ -25,7 +25,7 @@ function Home(props) {
         <Text style={styles.buttonText}>Vídeos</Text>
       </TouchableOpacity>
       <TouchableOpacity
-        onPress={() => navigation.navigate('Curadorias')}>
+        onPress={() => navigation.navigate('Curadoria')}>
         <Text style={styles.buttonText}>Curadorias</Text>
       </TouchableOpacity>
     </View>
