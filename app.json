@@ -1,0 +1,12 @@
+{
+  "name": "Passe-em-Casa",
+  "displayName": "Passe-em-Casa",
+  "expo": {
+    "name": "Passe-em-Casa",
+    "slug": "Passe-em-Casa",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
