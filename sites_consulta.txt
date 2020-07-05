@@ -1,0 +1,30 @@
+
+Instalação do servidor react native:
+https://www.devmedia.com.br/primeiro-app-com-react-native/40737
+
+Consulta disposição dos blocos na tela:
+https://reactnative.dev/docs/flexbox
+
+
+Comandos para instalação da barra de navegação.
+https://reactnavigation.org/docs/getting-started/
+
+Configuração de transição de telas
+https://heartbeat.fritz.ai/getting-started-with-stack-navigator-using-react-navigation-5-in-react-native-and-expo-apps-4c516becaee1
+
+
+Biblioteca de transição
+https://reactnavigation.org/docs/hello-react-navigation
+
+
+Intalação do servidor passo a passo:
+1 - Instalar o Node.js no site do Node
+2 - Executar o comando  para instalar a estrutura do react native: npm install -g create-react-native-app
+3 - Cria a aplicação HelloWord: create-react-native-app HelloWorld
+4 - npm run web 
+
+
+Bibliotecas:
+npm install @react-navigation/native
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+npm install @react-navigation/stack
