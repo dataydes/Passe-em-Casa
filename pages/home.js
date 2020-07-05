@@ -1,9 +1,15 @@
-import React from 'react'
-import { StyleSheet, View, Text, TouchableOpacity, Image } from 'react-native'
+import React from 'react';
+import { StyleSheet, View, Text, Image,TouchableOpacity } from 'react-native';
+
 
 function Home({ navigation }) {
   return (
     <View style={styles.container}>
+      <TouchableOpacity onPress={() => navigation.openDrawer()}>
+        <Image style={{ height: 60, width: 60 }}
+          source={require('../icons/menu.png')}
+        />
+      </TouchableOpacity>
       <View style={styles.estruturaConteudo}>
         <View style={styles.conteudo}>
           <View style={styles.textoConteudoPosition}>
@@ -22,10 +28,10 @@ function Home({ navigation }) {
           </Text>
         </View>
         <View style={styles.conteudo}>
-        <View style={styles.textoConteudoPosition}>
-          <Text style={styles.textoConteudo}>Exposição Muda</Text>
-          <Text style={styles.textoConteudo}>Local: Galeria CAL</Text>
-          <Text style={styles.textoConteudo}>Período</Text>
+          <View style={styles.textoConteudoPosition}>
+            <Text style={styles.textoConteudo}>Exposição Muda</Text>
+            <Text style={styles.textoConteudo}>Local: Galeria CAL</Text>
+            <Text style={styles.textoConteudo}>Período</Text>
           </View>
           <Image
             style={styles.imagem}
@@ -38,14 +44,14 @@ function Home({ navigation }) {
           </Text>
         </View>
       </View>
-    </View>
+    </View >
   )
 }
 
 const styles = StyleSheet.create({
   container: {
-    marginTop:'5%',
-    backgroundColor: '#ebebeb',    
+    marginTop: '5%',
+    backgroundColor: '#ebebeb',
   },
   text: {
     color: '#101010',
@@ -55,9 +61,7 @@ const styles = StyleSheet.create({
   buttonText: {
     marginTop: '2%',
   },
-  menu: {
-    flexDirection: 'column',
-  },
+
   conteudo: {
     flexDirection: 'row',
   },

@@ -1,10 +1,15 @@
 import React from 'react'
-import { StyleSheet, View, Text, TouchableOpacity } from 'react-native'
+import { StyleSheet, View, Text, TouchableOpacity,Image } from 'react-native'
 
 
 function Programacao({navigation}) {
     return (
         <View style={styles.container}>
+             <TouchableOpacity onPress={() => navigation.openDrawer()}>
+                <Image style={{ height: 60, width: 60 }}
+                    source={require('../icons/menu.png')}
+                />
+            </TouchableOpacity>
             <Text style={styles.text}>Programação de Julho</Text>
         </View>
     )
