@@ -7,6 +7,8 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "description": "Projeto de divulgação de arte para a casa da América Latina da Universidade de Brasília",
+    "githubUrl": "https://github.com/dataydes/Passe-em-Casa"
   }
 }
