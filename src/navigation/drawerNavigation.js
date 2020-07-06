@@ -2,12 +2,12 @@ import * as React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 
-import Home from './home';
-import Programacao from './programacao';
-import Acervo from './acervo';
-import Exposicao from './exposicao';
-import Videos from './videos';
-import Curadoria from './curadoria';
+import Home from '../pages/home';
+import Programacao from '../pages/programacao';
+import Acervo from '../pages/acervo';
+import Exposicao from '../pages/exposicao';
+import Videos from '../pages/videos';
+import Curadoria from '../pages/curadoria';
 
 
 const Drawer = createDrawerNavigator();
