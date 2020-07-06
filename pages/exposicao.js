@@ -1,16 +1,16 @@
-import React from 'react'
-import { StyleSheet, View, Text, Image,TouchableOpacity } from 'react-native'
-
+import React from 'react';
+import { StyleSheet, View, Text, Image,TouchableOpacity } from 'react-native';
 
 function Exposicao({ navigation }) {
     return (
         <View style={styles.container}>
             <TouchableOpacity onPress={() => navigation.openDrawer()}>
                 <Image style={{ height: 60, width: 60 }}
-                    source={require('../icons/menu.png')}
-                />
+                    source={require('../icons/menu.png')}/>
             </TouchableOpacity>
             <Text style={styles.text}>Exposições pela casa</Text>
+            <Text style={styles.text}></Text>
+
         </View>
     )
 }

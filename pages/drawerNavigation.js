@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
 
 import Home from './home';
 import Programacao from './programacao';
