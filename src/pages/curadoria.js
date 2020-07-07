@@ -1,7 +1,16 @@
-import React from 'react'
-import { StyleSheet, View, Text, Image,TouchableOpacity } from 'react-native'
+import React, { Component } from 'react';
+import { StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
 
-
+function getMoviesFromApi() {
+    return fetch('https://reactnative.dev/movies.json')
+      .then((response) => response.json())
+      .then((json) => {
+        return json.movies;
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }
 
 function Curadoria({ navigation }) {
     return (
@@ -11,7 +20,9 @@ function Curadoria({ navigation }) {
                     source={require('../icons/menu.png')}
                 />
             </TouchableOpacity>
-            <Text style={styles.text}>Curadorias</Text>
+            <Text>Curadoria</Text>
+            <Text>{console.log(getMoviesFromApi)}</Text>
+
         </View>
     )
 }
