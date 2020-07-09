@@ -9,7 +9,6 @@ import Exposicao from '../pages/exposicao';
 import Videos from '../pages/videos';
 import Curadoria from '../pages/curadoria';
 
-
 const Drawer = createDrawerNavigator();
 function drawerNavigation() {
     return (
