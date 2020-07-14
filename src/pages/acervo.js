@@ -1,15 +1,17 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image,TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 
 
 function Acervo({ navigation }) {
     return (
         <View style={styles.container}>
-            <TouchableOpacity onPress={() => navigation.openDrawer()}>
-                <Image style={{ height: 60, width: 60 }}
-                    source={require('../icons/menu.png')}
-                />
-            </TouchableOpacity>
+            <View style={styles.menu}>
+                <TouchableOpacity onPress={() => navigation.openDrawer()}>
+                    <Image style={styles.menuImage}
+                        source={require('../icons/menu.png')}
+                    />
+                </TouchableOpacity>
+            </View>
             <View style={styles.estrutura}>
                 <Image
                     style={styles.imagem}
@@ -18,9 +20,10 @@ function Acervo({ navigation }) {
                     }}
                 />
                 <View style={styles.detalheObra} >
-                    <Text style={styles.tituloObra}>Nome da Obra:</Text>
-                    <Text style={styles.nomeObra}>...</Text>
-                    <Text style={styles.tituloObra}>Autor:</Text>
+                <Text style={styles.tituloObra}>Artista:</Text>
+                    <Text style={styles.tituloObra}>Coleção:</Text>
+                    <Text style={styles.nomeObra}>Ano:</Text>
+                    
                     <Text style={styles.nomeObra}>Alfredo Volpi</Text>
                     <Text style={styles.tituloObra}>Data de aquisição:</Text>
                     <Text style={styles.nomeObra}>1997</Text>
@@ -40,11 +43,20 @@ function Acervo({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         alignItems: 'stretch',
-
+        marginTop: '5%',
+    },
+    menu: {
+        alignItems: 'center',
+        alignContent: 'stretch',
+    },
+    menuImage: {
+        borderRadius: 30,
+        height: 60,
+        width: 60,
     },
     estrutura: {
         flexDirection: 'row',
-        marginTop: '8%',
+        //marginTop: '8%',
         marginLeft: '2%',
     },
     detalheObra: {

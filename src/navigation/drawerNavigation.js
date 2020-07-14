@@ -8,6 +8,8 @@ import Acervo from '../pages/acervo';
 import Exposicao from '../pages/exposicao';
 import Videos from '../pages/videos';
 import Curadoria from '../pages/curadoria';
+import QRcode from '../pages/qrcode';
+import Experiencia from '../pages/experiencia';
 
 const Drawer = createDrawerNavigator();
 function drawerNavigation() {
@@ -20,6 +22,8 @@ function drawerNavigation() {
                 <Drawer.Screen name="Exposição" component={Exposicao} />
                 <Drawer.Screen name="Vídeos" component={Videos} />
                 <Drawer.Screen name="Curadorias" component={Curadoria} />
+                <Drawer.Screen name="QRcode" component={QRcode} />
+                <Drawer.Screen name="Experiência" component={Experiencia} />
             </Drawer.Navigator>
         </NavigationContainer>
     )

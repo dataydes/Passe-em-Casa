@@ -1,15 +1,16 @@
 import React from 'react'
-import { StyleSheet, View, Text, TouchableOpacity,Image } from 'react-native'
+import { StyleSheet, View, Text, TouchableOpacity, Image } from 'react-native'
 
 
 function Videos({ navigation }) {
     return (
         <View style={styles.container}>
-            <TouchableOpacity onPress={() => navigation.openDrawer()}>
-                <Image style={{ height: 60, width: 60 }}
-                    source={require('../icons/menu.png')}
-                />
-            </TouchableOpacity>
+            <View style={styles.menu}>
+                <TouchableOpacity onPress={() => navigation.openDrawer()}>
+                    <Image style={styles.menuImage}
+                        source={require('../icons/menu.png')} />
+                </TouchableOpacity>
+            </View>
             <Text style={styles.text}>Vídeos</Text>
         </View>
     )
@@ -17,10 +18,18 @@ function Videos({ navigation }) {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        //justifyContent: 'center',
+        marginTop: '5%',
         alignItems: 'center',
         backgroundColor: '#ebebeb'
+    },
+    menu: {
+        alignItems: 'center',
+        alignContent: 'stretch',
+    },
+    menuImage: {
+        borderRadius: 30,
+        height: 60,
+        width: 60,
     },
     text: {
         color: '#101010',

@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, Image, TouchableOpacity, FlatList } from 'react-native';
 import axios from 'axios';
-import { render } from 'react-dom';
 
 var dados1 = [];
-var chave = '';//5f03396bf001d2398c4beb23
+var chave = '';
 dados(chave);
 function dados(chave) {
-    axios.get('http://localhost:3001/api/acervo/' + chave)
+    axios.get('http://localhost:3002/api/acervo/' + chave)
         .then(function (response) {
             dados1 = (response.data.docs);
         })
@@ -19,16 +18,20 @@ function dados(chave) {
 function Curadoria({ navigation }) {
     return (
         <View style={styles.container}>
-            <TouchableOpacity onPress={() => navigation.openDrawer()}>
-                <Image style={{ height: 60, width: 60 }}
-                    source={require('../icons/menu.png')} />
-            </TouchableOpacity>
+            <View style={styles.menu}>
+                <TouchableOpacity onPress={() => navigation.openDrawer()}>
+                    <Image style={styles.menuImage}
+                        source={require('../icons/menu.png')} />
+                </TouchableOpacity>
+            </View>
             <Text style={styles.text}>Curadoria</Text>
             <FlatList data={dados1}
                 keyExtractor={item => item._id}
                 renderItem={({ item }) => {
                     return (
-                        <View><Text>{item.name}</Text></View>
+                        <View>
+                            <Text>{item.name}</Text>
+                        </View>
                     );
                 }}
             />
@@ -41,6 +44,15 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         backgroundColor: '#ebebeb'
+    },
+    menu: {
+        alignItems: 'center',
+        alignContent: 'stretch',
+    },
+    menuImage: {
+        borderRadius: 30,
+        height: 60,
+        width: 60,
     },
     text: {
         color: '#101010',
