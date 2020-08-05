@@ -1,3 +1,4 @@
+/*
 import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 
@@ -20,19 +21,12 @@ function Acervo({ navigation }) {
                     }}
                 />
                 <View style={styles.detalheObra} >
-                <Text style={styles.tituloObra}>Artista:</Text>
-                    <Text style={styles.tituloObra}>Coleção:</Text>
-                    <Text style={styles.nomeObra}>Ano:</Text>
-                    
-                    <Text style={styles.nomeObra}>Alfredo Volpi</Text>
-                    <Text style={styles.tituloObra}>Data de aquisição:</Text>
-                    <Text style={styles.nomeObra}>1997</Text>
                 </View>
             </View>
             <View style={styles.descricaoObra}>
-                <Text style={styles.tituloObra}>Contexto:</Text>
-                <Text style={styles.tituloObra}>Descrição:</Text>
-                <Text style={styles.nomeObra}>serigrafia sobre papel</Text>
+                <Text style={styles.tituloObra}>Autoria:</Text>
+                <Text style={styles.tituloObra}>Coleção:</Text>
+                <Text style={styles.tituloObra}>Material/Técnica/:</Text>
             </View>
 
 

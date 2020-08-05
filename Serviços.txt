@@ -1,0 +1,5 @@
+docker start 7315b6dda0a9
+cd c:/cal_back
+npm start
+cd c:/Passe-em-casa
+npm run web 

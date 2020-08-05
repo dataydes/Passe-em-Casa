@@ -1,8 +1,9 @@
+/*
 import React from 'react'
 import { StyleSheet, View, Text, TouchableOpacity, Image } from 'react-native'
 
 
-function Experiencia({ navigation }) {
+function QRcode({ navigation }) {
     return (
         <View style={styles.container}>
             <View style={styles.menu}>
@@ -11,8 +12,8 @@ function Experiencia({ navigation }) {
                         source={require('../icons/menu.png')} />
                 </TouchableOpacity>
             </View>
-            <Text style={styles.text}>Experiências</Text>
-            <Text style={styles.text}>Criação liberada</Text>
+            <Text style={styles.text}>QRcode</Text>
+            <Text style={styles.text}>Aponte o celular para o QRcode</Text>
         </View>
     )
 }
@@ -39,5 +40,5 @@ const styles = StyleSheet.create({
     },
 })
 
-export default Experiencia
+export default QRcode
 

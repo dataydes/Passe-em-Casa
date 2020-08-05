@@ -1,25 +1,26 @@
-import React from 'react'
+
+/*import React from 'react'
 import { StyleSheet, View, Text, TouchableOpacity, Image } from 'react-native'
 
 
-function QRcode({ navigation }) {
+function Programacao({ navigation }) {
     return (
         <View style={styles.container}>
             <View style={styles.menu}>
                 <TouchableOpacity onPress={() => navigation.openDrawer()}>
                     <Image style={styles.menuImage}
-                        source={require('../icons/menu.png')} />
+                        source={require('../icons/menu.png')}
+                    />
                 </TouchableOpacity>
             </View>
-            <Text style={styles.text}>QRcode</Text>
-            <Text style={styles.text}>Aponte o celular para o QRcode</Text>
+            <Text style={styles.text}>Programação de Julho</Text>
         </View>
     )
 }
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: '5%',
+        marginTop:'5%',
         alignItems: 'center',
         backgroundColor: '#ebebeb'
     },
@@ -39,5 +40,5 @@ const styles = StyleSheet.create({
     },
 })
 
-export default QRcode
+export default Programacao
 

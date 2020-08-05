@@ -1,8 +1,9 @@
+/*
 import React from 'react'
 import { StyleSheet, View, Text, TouchableOpacity, Image } from 'react-native'
 
 
-function Videos({ navigation }) {
+function Experiencia({ navigation }) {
     return (
         <View style={styles.container}>
             <View style={styles.menu}>
@@ -11,7 +12,8 @@ function Videos({ navigation }) {
                         source={require('../icons/menu.png')} />
                 </TouchableOpacity>
             </View>
-            <Text style={styles.text}>Vídeos</Text>
+            <Text style={styles.text}>Experiências</Text>
+            <Text style={styles.text}>Criação liberada</Text>
         </View>
     )
 }
@@ -38,5 +40,5 @@ const styles = StyleSheet.create({
     },
 })
 
-export default Videos
+export default Experiencia
 

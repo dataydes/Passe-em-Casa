@@ -1,19 +1,20 @@
+/*
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, Image, TouchableOpacity, FlatList } from 'react-native';
 import axios from 'axios';
 
-var dados1 = [];
-var chave = '';
-dados(chave);
-function dados(chave) {
-    axios.get('http://localhost:3002/api/acervo/' + chave)
+let dados1 = [];
+consulta();
+function consulta() {
+    axios.get('http://localhost:3000/api/atividades/')
         .then(function (response) {
-            dados1 = (response.data.docs);
+            dados1 = (response.data.docs)
+
         })
         .catch(function (error) {
             console.warm(error);
         })
-};
+}
 
 function Curadoria({ navigation }) {
     return (
@@ -30,7 +31,7 @@ function Curadoria({ navigation }) {
                 renderItem={({ item }) => {
                     return (
                         <View>
-                            <Text>{item.name}</Text>
+                            <Text>{item.nome}</Text>
                         </View>
                     );
                 }}
